@@ -1,0 +1,77 @@
+.lookingfor {
+  .cards {
+    margin: 0 auto;
+    margin-top: 3rem;
+    position: relative;
+    width: 96%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 104%;
+      height: 100%;
+      top: 50%;
+      left: -2%;
+      z-index: -1;
+      border: 1px solid #bcbcbc;
+      border-radius: 0.3rem;
+    }
+
+    .card {
+      flex: 1;
+      height: 280px;
+      background-color: red;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      justify-content: flex-start;
+      padding: 3rem;
+
+      h1 {
+        color: #fff;
+        font-family: "Imbue", serif;
+        letter-spacing: 3px;
+        font-weight: 500;
+        font-size: 32px;
+      }
+    }
+    .card1 {
+      background-image: url("../../Assets/img1.png");
+    }
+    .card2 {
+      background-image: url("../../Assets/img2.png");
+    }
+    .card3 {
+      background-image: url("../../Assets/img3.png");
+    }
+  }
+}
+
+.searchBox {
+    border: 1px solid #676767;
+    width: fit-content;
+    width: 300px;
+    height: 150px;
+    padding: 0 2rem;
+    border-radius: .3rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+    background-color: #fff;
+    outline: 10px solid #fff;
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    background-color: #fff;
+    position: relative;
+    top: -26px;
+    padding: 0 1rem;
+  }
+
+  select{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #676767;
+    margin-bottom: 1rem;
+  }
+}

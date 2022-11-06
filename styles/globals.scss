@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100;10..100,200;10..100,300;10..100,400;10..100,500;10..100,600;10..100,700;10..100,800;10..100,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.column {
+  flex-direction: column;
+}
+button {
+  cursor: pointer;
+}
+
+button.btn {
+  background: linear-gradient(to right, #055c5c, #2bd7af, #055c5c);
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  width: 100%;
+  padding: .2rem;
+  border-radius: 0.8rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: inherit;
+  padding: 0 2rem;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    max-width: 95vw;
+    padding: 0;
+  }
+}
